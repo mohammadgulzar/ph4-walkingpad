@@ -1,0 +1,6 @@
+ph4-walkingpad
+bleak
+asyncio
+coloredlogs
+blessed
+requests

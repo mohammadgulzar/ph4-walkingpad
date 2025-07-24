@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600 focus:ring-primary-500;
+  }
+  
+  .btn-success {
+    @apply bg-green-500 text-white hover:bg-green-600 focus:ring-green-500;
+  }
+  
+  .btn-warning {
+    @apply bg-yellow-500 text-white hover:bg-yellow-600 focus:ring-yellow-500;
+  }
+  
+  .btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600 focus:ring-red-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-500 text-white hover:bg-gray-600 focus:ring-gray-500;
+  }
+  
+  .btn-outline {
+    @apply border-2 bg-transparent hover:bg-gray-50;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-200;
+  }
+  
+  .status-badge {
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .status-connected {
+    @apply bg-green-50 text-green-600 border border-green-200;
+  }
+  
+  .status-disconnected {
+    @apply bg-gray-50 text-gray-600 border border-gray-200;
+  }
+  
+  .speed-control {
+    @apply w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+  }
+  
+  .speed-control::-webkit-slider-thumb {
+    @apply appearance-none w-6 h-6 bg-primary-500 rounded-full cursor-pointer;
+  }
+  
+  .speed-control::-moz-range-thumb {
+    @apply w-6 h-6 bg-primary-500 rounded-full cursor-pointer border-0;
+  }
+}
